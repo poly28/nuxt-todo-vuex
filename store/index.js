@@ -21,6 +21,14 @@ const createStore = () => {
       deleteTask: function(state, index) {
         state.todos.splice(index, 1);
       }
+    },
+    actions: {
+      updateAddTask(context) {
+        context.commit("addTask");
+      },
+      updateDeleteTask(context, index) {
+        context.commit("deleteTask", index);
+      }
     }
     // mutations: {
     //   updateMessage: function(state) {
