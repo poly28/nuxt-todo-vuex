@@ -7,7 +7,6 @@ export const state = () => {
 
 export const mutations = {
   addTask: function(state) {
-    console.log(state);
     let add = {
       isDone: false,
       task: state.task
